@@ -1,14 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-    <link ref="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  
+   
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather+Sans:wght@700&family=Merriweather:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="src/styles.css" />
   </head>
+
   <body>
-    <h1>Hello Git!</h1>
-    <script src="script.js"></script>
+    <div class="container"></div>
+    <di<h1v style="text-align: center;">
+      <h1>Weather App</h1>
+      <br />
+   <div id="datetime"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+           <form class="search-form" id="search-form">
+                  <input 
+                  type="search" 
+                  id="city-input"
+                  placeholder="Enter City" 
+                 autofocus="on"
+                 autocomplete="off"
+                 class="form-control shadow-sm"
+                 />
+                 <div class="col-md"> 
+                  <input
+                    type="submit"
+                    value="Search"
+                    class="form-control btn btn-primary shadow-sm w-100"
+                  />
+                </div>
+                <button
+                class="btn btn-success w-100"
+                id="current-location-button"
+              >
+                Current Location 
+              </button>
+                  
+              <br />
+                  <br />
+                  <h2 id= "city"> 
+                  Liverpool  
+                  </h2>
+                  <h3>
+                    <span class="current-temp" id="current-temp">19</span
+                      ><span class="units">
+<a href="#" id="celsius-link">°C</a> 
+                       
+                        </span>
+                  </h3>
+               </div>
+        </div>
+      </div>
+
+      <h4> 
+          <img
+          src=
+          https://www.pngmart.com/files/3/Weather-Transparent-Background.png
+          alt="Weather" width="200" />
+        </h4>
+      <h5>
+  <img
+      src=
+      https://www.pngmart.com/files/3/Weather-Transparent-Background.png
+      alt="Weather" width="200" />
+     </h5>
+  
+  
+    <ul> 
+        <li id="description">
+            Partly Cloudy
+          </li>
+      <li>Humidity: <span id="humidity"></span>%</li>
+      <li>Wind Speed: <span id="wind"></span> km/hr</li>
+      </ul>
+     
+    </form>
+
+ <div class="row">
+      <div class="col">Mon<br /><span style="font-size: 29px;">🌧️ 10℃</span></div>
+      <div class="col">Tue<br /><span style="font-size: 29px;">🌧️ 11℃</span></div>
+      <div class="col">Wed<br /><span style="font-size: 29px;">⛅9℃</span></div>
+      <div class="col">Thur<br /><span style="font-size: 29px;">🌨️ 7℃</span></div>
+      <div class="col">Fri<br /><span style="font-size: 29px;">🌧️ 10℃</span></div>
+      <div class="col">Sat<br /><span style="font-size: 29px;">⛅ 14℃</span></div>
+      <div class="col">Sun<br /><span style="font-size: 29px;">⛅ 19℃</span></div>
+    </div>
+  
+    <h6>
+      Coded by Pardip Kaur
+     </h6>
+    <script src="src/index.js"></script>
   </body>
 </html>

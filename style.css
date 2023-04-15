@@ -1,5 +1,67 @@
+body {
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgb(148, 188, 216) 0%,
+    rgb(123, 195, 199) 10.9%,
+    rgb(172, 231, 236) 40.7%,
+    rgb(240, 230, 155) 90.2%
+  );
+}
+
 h1 {
+  margin-top: 5%;
+  color: navy;
+  text-align: center;
+  font-weight: 900;
+  font-size: 40px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+h2 {
+  font-weight: 750;
+  text-decoration: underline;
+  color: navy;
+}
+
+ul,
+li {
+  list-style: none;
+  font-weight: bold;
+  color: navy;
+}
+
+h4 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 19%;
+  margin-left: 5%;
+}
+
+h5 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 19%;
+  margin-right: 5%;
+  transform: scaleX(-1);
+}
+
+.col {
+  border: 4px Double navy;
+  text-align: center;
+  font-weight: 700;
+  padding: 25px;
+  margin: 2px;
+}
+
+h6 {
   text-align: center;
   text-decoration: underline;
-  color: blue;
+  font-style: italic;
+  color: navy;
+  padding: 10%;
 }
