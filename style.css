@@ -66,24 +66,17 @@ h6 {
   text-decoration: underline;
   font-weight: bolder;
   color: navy;
-  padding: 10%;
+  padding: 20%;
 }
 
 .card {
-  background-color:blue;
-  border-radius: 10%;
-  height: 100%;
-}
-.card {
+  background-color: lightgoldenrodyellow;
+  border-radius: 20%;
   transition: all 200ms ease-in-out;
   cursor: pointer;
+  height: 100%;
 }
 
 .card:hover {
   transform: scale(1.2);
-}
-
-p {
-  padding-top: 30px;
-  text-align: center;
 }
