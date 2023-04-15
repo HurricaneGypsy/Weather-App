@@ -51,17 +51,38 @@ h5 {
 }
 
 .col {
-  border: 4px Double navy;
   text-align: center;
-  font-weight: 700;
-  padding: 25px;
+  font-weight: 600;
+  padding: 1px;
   margin: 2px;
+  border: 4px darkgreen;
+  border-style: double;
+  border-radius: 10%;
+  color: navy;
 }
 
 h6 {
   text-align: center;
   text-decoration: underline;
-  font-style: italic;
+  font-weight: bolder;
   color: navy;
   padding: 10%;
+}
+
+.card {
+  background-color: lightgoldenrodyellow;
+  border-radius: 10%;
+}
+.card {
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
+
+p {
+  padding-top: 30px;
+  text-align: center;
 }
