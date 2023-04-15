@@ -21,9 +21,18 @@ h1 {
 }
 
 h2 {
-  font-weight: 750;
+  font-weight: 500;
   text-decoration: underline;
   color: navy;
+}
+
+h3 {
+  color: navy;
+  text-align: center;
+}
+#celsius-link {
+  color: navy;
+  font-size: 20px;
 }
 
 ul,
@@ -31,14 +40,17 @@ li {
   list-style: none;
   font-weight: bold;
   color: navy;
+  text-align: center;
 }
-
+#current-location-button {
+  background-color: orange;
+}
 h4 {
   position: absolute;
   left: 0;
   top: 0;
   margin-top: 19%;
-  margin-left: 5%;
+  margin-left: 10%;
 }
 
 h5 {
@@ -46,16 +58,16 @@ h5 {
   right: 0;
   top: 0;
   margin-top: 19%;
-  margin-right: 5%;
+  margin-right: 10%;
   transform: scaleX(-1);
 }
 
 .col {
   text-align: center;
-  font-weight: 600;
+  font-weight: 400;
   padding: 1px;
-  margin: 60px 8px;
-  border: 4px darkgreen;
+  margin: 10px 5px;
+  border: 4px rgb(227, 171, 15);
   border-style: double;
   border-radius: 10%;
   color: navy;
@@ -64,14 +76,20 @@ h5 {
 h6 {
   text-align: center;
   text-decoration: underline;
-  font-size: larger;
-  font-weight: bolder;
+  font-size: 25px;
+  font-weight: 500;
   color: navy;
   padding: 20%;
 }
 
 .card {
-  background-color: lightgoldenrodyellow;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgb(233, 233, 229) 0%,
+    rgb(212, 228, 229) 20.9%,
+    rgb(122, 223, 232) 40.7%,
+    rgb(240, 230, 155) 95.2%
+  );
   border-radius: 10%;
   transition: all 200ms ease-in-out;
   cursor: pointer;
@@ -84,4 +102,5 @@ h6 {
 p {
   text-align: center;
   font-weight: 500;
+  font-size: larger;
 }
