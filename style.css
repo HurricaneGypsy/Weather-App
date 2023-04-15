@@ -70,9 +70,9 @@ h6 {
 }
 
 .card {
-  background-color: lightgoldenrodyellow;
+  background-color:blue;
   border-radius: 10%;
-   height: 100%;
+  height: 100%;
 }
 .card {
   transition: all 200ms ease-in-out;
