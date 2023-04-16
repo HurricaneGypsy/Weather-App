@@ -108,3 +108,8 @@ p {
   font-weight: 500;
   font-size: larger;
 }
+footer {
+  font-weight: 450;
+  font-size: 15px;
+  padding-top: 3%;
+}
