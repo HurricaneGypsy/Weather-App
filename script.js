@@ -57,3 +57,35 @@ searchForm.addEventListener("submit", search);
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
+
+function displayWeatherCondition(response) {
+  document.querySelector("#city").innerHTML = response.data.name;
+  document.querySelector("#current-temp").innerHTML = Math.round(
+    response.data.main.temp
+  );
+  document.querySelector("#humidity").innerHTML = Math.round(
+    response.data.main.humidity
+  );
+  document.querySelector("#wind").innerHTML = Math.round(
+    response.data.wind.speed
+  );
+
+  document.querySelector("#description").innerHTML =
+    response.data.weather[0].main;
+
+  let celsiusTemperature = response.data.main.temp;
+  let fahrenheitTemperature = convertToFahrenheit(celsiusTemperature);
+
+  let temperatureElement = document.querySelector("#current-temp");
+  temperatureElement.innerHTML = `${Math.round(
+    celsiusTemperature
+  )}°C / ${Math.round(fahrenheitTemperature)}°F`;
+}
+
+function convertToFahrenheit(celsius) {
+  return (celsius * 9) / 5 + 32;
+}
+
+function convertToCelsius(fahrenheit) {
+  return ((fahrenheit - 32) * 5) / 9;
+}
