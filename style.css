@@ -8,6 +8,12 @@ body {
   );
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  border: 5px solid  rgb(227, 171, 15);;
+}
+
 h1 {
   margin-top: 5%;
   color: navy;
@@ -46,14 +52,16 @@ li {
   color: navy;
   text-align: center;
 }
+
 #current-location-button {
-  background-color: orange;
-}
+background-color:  orange;
+  }
+
 h4 {
   position: absolute;
   left: 0;
   top: 0;
-  margin-top: 10%;
+  margin-top: 5%;
   margin-left: 5%;
 }
 
@@ -61,20 +69,33 @@ h5 {
   position: absolute;
   right: 0;
   top: 0;
-  margin-top: 10%;
+  margin-top: 5%;
   margin-right: 5%;
   transform: scaleX(-1);
+}
+
+.row {
+  margin: 0 60px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .col {
   text-align: center;
   font-weight: 400;
   padding: 1px;
-  margin: 10px 5px;
+  margin: 5px 5px;
   border: 4px rgb(227, 171, 15);
   border-style: double;
   border-radius: 10%;
   color: navy;
+   float: left;
+  width: 33.33%;
+  padding: 5px;
 }
 
 h6 {
@@ -83,7 +104,7 @@ h6 {
   font-size: 25px;
   font-weight: 500;
   color: navy;
-  padding: 20%;
+  padding: 15%;
 }
 
 .card {
@@ -100,8 +121,14 @@ h6 {
   height: 100%;
 }
 
+
+.card-body {
+    padding: .2rem;
+}
+
 .card:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px 0 rgb(67, 67, 204);
 }
 p {
   text-align: center;
