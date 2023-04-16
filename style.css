@@ -1,3 +1,6 @@
+
+
+
 body {
   background: radial-gradient(
     circle at 50% 50%,
@@ -6,20 +9,20 @@ body {
     rgb(172, 231, 236) 40.7%,
     rgb(240, 230, 155) 90.2%
   );
+   margin: 0 auto;
+   margin-top: 2%;
+  padding: 10px;
+  border: 5px solid  rgb(227, 171, 15);
+  max-width: 950px;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  border: 5px solid  rgb(227, 171, 15);;
-}
 
 h1 {
-  margin-top: 5%;
+margin-top: 2%;
   color: navy;
   text-align: center;
   font-weight: 900;
-  font-size: 40px;
+  font-size: 30px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: 700;
@@ -27,7 +30,8 @@ h1 {
 }
 
 h2 {
-  font-weight: 500;
+ font-weight: bold;
+  font-size: 20px;
   text-decoration: underline;
   color: navy;
 }
@@ -35,22 +39,28 @@ h2 {
 h3 {
   color: navy;
   text-align: center;
+   font-size: 15px;
+   font-weight: bold;
+   margin-bottom: 0;
 }
 #celsius-link {
   color: navy;
-  font-size: 20px;
+  
 }
 #fahrenheit-link {
 color: navy;
-  font-size: 20px;
+ 
 }  
 
 ul,
 li {
+  margin-bottom: 0;
+  padding: 0;
   list-style: none;
   font-weight: bold;
   color: navy;
   text-align: center;
+  line-height: 25px;
 }
 
 #current-location-button {
@@ -61,21 +71,21 @@ h4 {
   position: absolute;
   left: 0;
   top: 0;
-  margin-top: 5%;
-  margin-left: 5%;
+  margin-top: 3%;
+  margin-left: 22%;
 }
 
 h5 {
   position: absolute;
   right: 0;
   top: 0;
-  margin-top: 5%;
-  margin-right: 5%;
+  margin-top: 3%;
+  margin-right: 22%;
   transform: scaleX(-1);
 }
 
 .row {
-  margin: 0 60px;
+  margin: 0 100px;
 }
 
 .row:after {
@@ -101,7 +111,7 @@ h5 {
 h6 {
   text-align: center;
   text-decoration: underline;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
   color: navy;
   padding: 15%;
@@ -133,10 +143,10 @@ h6 {
 p {
   text-align: center;
   font-weight: 500;
-  font-size: larger;
+  font-size: 15px;
 }
 footer {
   font-weight: 450;
-  font-size: 15px;
-  padding-top: 3%;
+  font-size: 12px;
+  
 }
