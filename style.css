@@ -1,18 +1,15 @@
-
-
-
 body {
   background: radial-gradient(
     circle at 50% 50%,
-    rgb(148, 188, 216) 0%,
-    rgb(123, 195, 199) 10.9%,
-    rgb(172, 231, 236) 40.7%,
-    rgb(240, 230, 155) 90.2%
+   
+    rgb(177, 231, 236) 10.8%,
+    rgb(240, 230, 155) 95.2%
   );
    margin: 0 auto;
    margin-top: 2%;
   padding: 10px;
-  border: 7px solid  rgb(227, 171, 15);
+  border: 5px solid  rgb(227, 171, 15);
+  border-radius: 2%;
   max-width: 950px;
 }
 
@@ -141,7 +138,7 @@ h6 {
 
 .card:hover {
   transform: scale(1.1);
-  box-shadow: 0 8px 16px 0 rgb(67, 67, 204);
+  box-shadow: 0 10px 16px 0 rgb(67, 67, 204);
 }
 p {
   text-align: center;

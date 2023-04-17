@@ -71,8 +71,7 @@ function displayWeatherCondition(response) {
   );
 
   document.querySelector("#description").innerHTML =
-    response.data.weather[0].main;
-
+  response.data.weather[0].main;
   let celsiusTemperature = response.data.main.temp;
   let fahrenheitTemperature = convertToFahrenheit(celsiusTemperature);
 
