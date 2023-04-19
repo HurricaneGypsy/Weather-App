@@ -100,12 +100,14 @@ function convertToCelsius(fahrenheit) {
   return ((fahrenheit - 32) * 5) / 9;  
 }
 
-   console.log(response.data);
-   let iconElement = document.querySelector("#icon");
-   iconElement.setAttribute(
-     "src",
-     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-   );
-   iconElement.setAttribute("src", response.data.condition.icon);
+   function updateWeatherIcon(response) {
+     let iconElement = document.querySelector("#icon");
+     iconElement.setAttribute(
+       "src",
+       `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+     );
+   }
+
+   axios.get(apiUrl).then(updateWeatherIcon);
 
   
