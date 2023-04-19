@@ -29,6 +29,17 @@ function displayWeatherCondition(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+
+   console.log(response.data);
+   let iconElement = document.querySelector("#icon");
+   iconElement.setAttribute(
+     "src",
+     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`
+   );
+   iconElement.setAttribute("src", response.data.condition.icon);
+
+   displayWeatherCondition(response.data.coordinates);
+ 
 }
 
 function search(event) {
@@ -89,18 +100,12 @@ function convertToCelsius(fahrenheit) {
   return ((fahrenheit - 32) * 5) / 9;  
 }
 
-let response = {
-  data: {
-    weather: [
-      {
-        icon: "02d",
-      },
-    ],
-  },
-};
+   console.log(response.data);
+   let iconElement = document.querySelector("#icon");
+   iconElement.setAttribute(
+     "src",
+     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+   );
+   iconElement.setAttribute("src", response.data.condition.icon);
 
-let iconElement = document.querySelector("#icon");
-iconElement.setAttribute(
-  "src",
-  `http://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`
-);
+  

@@ -64,23 +64,6 @@ li {
 background-color:  orange;
   }
 
-h4 {
-  position: absolute;
-  left: 0;
-  top: 0;
-  margin-top: 3%;
-  margin-left: 22%;
-}
-
-h5 {
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin-top: 3%;
-  margin-right: 22%;
-  transform: scaleX(-1);
-}
-
 .row {
   margin: 0 100px;
 }
