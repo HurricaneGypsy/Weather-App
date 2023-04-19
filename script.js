@@ -100,14 +100,13 @@ function convertToCelsius(fahrenheit) {
   return ((fahrenheit - 32) * 5) / 9;  
 }
 
-   function updateWeatherIcon(response) {
-     let iconElement = document.querySelector("#icon");
-     iconElement.setAttribute(
-       "src",
-       `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-     );
-   }
+ function updateWeatherIcon(response) {
+   let iconElement = document.querySelector("#icon img");
+   iconElement.src = `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`;
+ }
 
-   axios.get(apiUrl).then(updateWeatherIcon);
+  let apiKey = "59a70ea155f6bd700d4dc06ce96174c8";
+  let city = "Cancun";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
 
-  
+  axios.get(apiUrl).then(updateWeatherIcon);
