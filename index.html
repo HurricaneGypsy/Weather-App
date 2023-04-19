@@ -28,11 +28,11 @@
   </head>
 
   <body>
-    <div class="container"></div>
+     <div class="container"></div>
     <di<h1v style="text-align: center;">
       <h1>Weather App</h1>
       <br />
-     <div id="datetime"></div>
+   <div id="datetime"></div>
       <div class="container">
         <div class="row">
           <div class="col-md-6 mx-auto">
@@ -51,15 +51,14 @@
                     value="Search"
                     class="form-control btn btn-primary shadow-sm w-100"
                   />
-                </div> 
+                </div>
                 <button
                 class="btn btn-success w-100"
                 id="current-location-button"
               >
                 Current Location 
               </button>
-                  
-              <br />
+             <br />
                   <br />
                   <h2 id= "city"> 
                  </h2>
@@ -73,27 +72,16 @@
                </div>
         </div>
       </div>
+  
 
-      <h4> 
-        <img
-      src=
-      https://www.pngmart.com/files/3/Weather-Transparent-Background.png
-      alt="Weather" width="125" />
-        
-        </h4>
-      <h5>
-  <img
-      src=
-      https://www.pngmart.com/files/3/Weather-Transparent-Background.png
-      alt="Weather" width="125" />
-     </h5>
-  
-  
     <ul> 
-        <li id="description">
+        <li id="description"></li>
+         <li>  <img
+      src ="", id="icon"
+      alt="Weather"  />
+</li>
 
-          </li>
-      <li>Humidity💦: <span id="humidity"></span>%</li>
+<li>Humidity💦: <span id="humidity"></span>%</li>
       <li>Wind Speed🍃: <span id="wind"></span> km/hr</li>
       </ul>
      
@@ -104,7 +92,7 @@
         <div class="card">
           <div class="card-body">
             <h6 class="card-title">Mon</h6><br>
-           <p class="card-text" style="font-size: 20px; line-height: 2em;"><span style="font-size: 44px; vertical-align: auto;">🌧️ </span>10℃</p>
+           <p class="card-text" style="font-size: 20px; line-height: 2em;"><span id="weather-emoji-mon" style="font-size: 44px; vertical-align: auto;">🌧️ </span>10℃</p>
           </div>
         </div>
       </div>
@@ -112,7 +100,7 @@
         <div class="card">
           <div class="card-body">
             <h6 class="card-title">Tue</h6><br>
-           <p class="card-text" style="font-size: 20px; line-height: 2em;"><span style="font-size: 44px; vertical-align: auto;">🌧️</span>11℃</p>
+           <p class="card-text" style="font-size: 20px; line-height: 2em;"><span id="weather-emoji-tues" style="font-size: 44px; vertical-align: auto;">🌧️</span>11℃</p>
           </div>
         </div>
       </div>
@@ -120,7 +108,7 @@
         <div class="card">
           <div class="card-body">
             <h6 class="card-title">Wed</h6><br>
-           <p class="card-text" style="font-size: 20px; line-height: 2em;"><span style="font-size: 44px; vertical-align: auto;">⛅</span>9℃</p>
+           <p class="card-text" style="font-size: 20px; line-height: 2em;"><span id="weather-emoji-wed" style="font-size: 44px; vertical-align: auto;">⛅</span>9℃</p>
           </div>
         </div>
       </div>
@@ -128,7 +116,7 @@
         <div class="card">
           <div class="card-body">
             <h6 class="card-title">Thur</h6><br>
-            <p class="card-text" style="font-size: 20px; line-height: 2em;"><span style="font-size: 44px; vertical-align: auto;">🌨️ </span>7℃</p>
+            <p class="card-text" style="font-size: 20px; line-height: 2em;"><span id="weather-emoji-thurs" style="font-size: 44px; vertical-align: auto;">🌨️ </span>7℃</p>
           </div>
         </div>
       </div>
@@ -136,7 +124,7 @@
         <div class="card">
           <div class="card-body">
             <h6 class="card-title">Fri</h6><br>
-            <p class="card-text" style="font-size: 20px; line-height: 2em;"><span style="font-size: 44px; vertical-align: auto;">🌧️ </span>6℃</p>
+            <p class="card-text" style="font-size: 20px; line-height: 2em;"><span id="weather-emoji-fri" style="font-size: 44px; vertical-align: auto;">🌧️ </span>6℃</p>
           </div>
         </div>
       </div>
@@ -144,7 +132,7 @@
         <div class="card">
           <div class="card-body">
             <h6 class="card-title">Sat</h6><br>
-           <p class="card-text" style="font-size: 20px; line-height: 2em;"><span style="font-size: 44px; vertical-align: auto;">⛅</span>14℃</p>
+           <p class="card-text" style="font-size: 20px; line-height: 2em;"><span id="weather-emoji-sat" style="font-size: 44px; vertical-align: auto;">⛅</span>14℃</p>
           </div>
         </div>
       </div>
@@ -152,7 +140,7 @@
         <div class="card">
           <div class="card-body">
             <h6 class="card-title">Sun</h6><br>
-            <p class="card-text" style="font-size: 20px; line-height: 2em;"><span style="font-size: 44px; vertical-align: auto;">⛅</span>19℃</p>
+            <p class="card-text" style="font-size: 20px; line-height: 2em;"><span  id="weather-emoji-sun" style="font-size: 44px; vertical-align: auto;">⛅</span>19℃</p>
           </div>
         </div>
       </div>  

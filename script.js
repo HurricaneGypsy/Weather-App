@@ -59,6 +59,7 @@ let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 function displayWeatherCondition(response) {
+  
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#current-temp").innerHTML = Math.round(
     response.data.main.temp
@@ -79,12 +80,27 @@ function displayWeatherCondition(response) {
   temperatureElement.innerHTML = `${Math.round(
     celsiusTemperature
   )}°C / ${Math.round(fahrenheitTemperature)}°F`;
-}
 
+}
 function convertToFahrenheit(celsius) {
   return (celsius * 9) / 5 + 32;
 }
-
 function convertToCelsius(fahrenheit) {
-  return ((fahrenheit - 32) * 5) / 9;
+  return ((fahrenheit - 32) * 5) / 9;  
 }
+
+let response = {
+  data: {
+    weather: [
+      {
+        icon: "02d",
+      },
+    ],
+  },
+};
+
+let iconElement = document.querySelector("#icon");
+iconElement.setAttribute(
+  "src",
+  `http://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`
+);
