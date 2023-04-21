@@ -12,7 +12,7 @@ const options = {
   second: "numeric",
   timeZoneName: "short",
 };
-const dateTimeFormat = new Intl.DateTimeFormat("en-UK", options);
+const dateTimeFormat = new Intl.DateTimeFormat("en-US", options);
 const formattedDateTime = dateTimeFormat.format(date);
 datetime.innerHTML = formattedDateTime;
 
