@@ -3,7 +3,7 @@ body {
     circle at 50% 50%,
    
     rgb(177, 231, 236) 10.8%,
-    rgb(240, 230, 155) 95.2%
+    rgb(215, 198, 71) 95.2%
   );
    margin: 0 auto;
    margin-top: 2%;
@@ -48,6 +48,23 @@ h3 {
 color: navy;
  
 }  
+h4 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 3%;
+  margin-left: 22%;
+}
+
+h5 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 3%;
+  margin-right: 22%;
+  transform: scaleX(-1);
+}
+
 
 ul,
 li {
@@ -58,6 +75,7 @@ li {
   color: navy;
   text-align: center;
   line-height: 25px;
+  font-style: italic;
 }
 
 #current-location-button {

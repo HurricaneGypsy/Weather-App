@@ -43,17 +43,31 @@ searchForm.addEventListener("submit", search);
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
-function displayWeatherCondition(response) {
-  document.querySelector("#city").innerHTML = response.data.name;
-  document.querySelector("#current-temp").innerHTML = Math.round(
-    response.data.main.temp
-  );
-  document.querySelector("#humidity").innerHTML = Math.round(
-    response.data.main.humidity
-  );
-  document.querySelector("#wind").innerHTML = Math.round(
-    response.data.wind.speed
-  );
+
+
+  function displayWeatherCondition(response) {
+    document.querySelector("#city").innerHTML = response.data.name;
+    document.querySelector("#current-temp").innerHTML = Math.round(
+      response.data.main.temp
+    );
+    document.querySelector("#humidity").innerHTML = Math.round(
+      response.data.main.humidity
+    );
+    document.querySelector("#wind").innerHTML = Math.round(
+      response.data.wind.speed
+    );
+
+    // Convert Unix time to local time
+    const sunrise = new Date(
+      (response.data.sys.sunrise + response.data.timezone) * 1000
+    ).toLocaleTimeString();
+    const sunset = new Date(
+      (response.data.sys.sunset + response.data.timezone) * 1000
+    ).toLocaleTimeString();
+
+    document.querySelector("#rise").innerHTML = sunrise;
+    document.querySelector("#set").innerHTML = sunset;
+  
 
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
@@ -71,6 +85,7 @@ function displayWeatherCondition(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`
   );
 }
+
 function convertToFahrenheit(celsius) {
   return (celsius * 9) / 5 + 32;
 }
