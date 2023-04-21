@@ -32,6 +32,7 @@ h2 {
   font-size: 20px;
   text-decoration: underline;
   color: navy;
+  text-shadow: 1px 1px rgb(227, 171, 15);
 }
 
 h3 {
@@ -40,6 +41,7 @@ h3 {
    font-size: 15px;
    font-weight: bold;
    margin-bottom: 0;
+   text-shadow: 1px 1px rgb(227, 171, 15);
 }
 #celsius-link {
   color: navy;
@@ -54,7 +56,7 @@ h4 {
   left: 0;
   top: 0;
   margin-top: 3%;
-  margin-left: 22%;
+  margin-left: 20%;
 }
 
 h5 {
@@ -62,7 +64,7 @@ h5 {
   right: 0;
   top: 0;
   margin-top: 3%;
-  margin-right: 22%;
+  margin-right: 20%;
   transform: scaleX(-1);
 }
 
@@ -77,6 +79,7 @@ li {
   text-align: center;
   line-height: 25px;
   font-style: italic;
+  text-shadow: 1px 1px rgb(227, 171, 15);
 }
 
 #current-location-button {
