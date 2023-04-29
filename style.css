@@ -59,24 +59,7 @@ h3 {
 }
 #fahrenheit-link {
 color: navy;
- 
 }  
-h4 {
-  position: absolute;
-  left: 0;
-  top: 0;
-  margin-top: 3%;
-  margin-left: 20%;
-}
-
-h5 {
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin-top: 3%;
-  margin-right: 20%;
-  transform: scaleX(-1);
-}
 
 img {
   max-width: 100%;
@@ -100,9 +83,8 @@ li {
 background-color:  orange;
   }
 
-
 .row {
-  margin:0 100px;
+  margin:0 10px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -110,20 +92,18 @@ background-color:  orange;
 .col{
   text-align: center;
   font-weight: 400;
-  padding: 1px;
   margin: 2px 2px;
   border: 4px rgb(227, 171, 15);
   border-style: double;
   border-radius: 10%;
   color: navy;
   width: calc(14% - (20px * (7 -1)) /7);
-  padding: 5px;
+  padding: 7px;
  
 }
 
 
-
-h6 {
+.card-title-weather-forcast-date {
   text-align: center;
   text-decoration: underline;
   font-size: 20px;
@@ -149,25 +129,32 @@ h6 {
  
 }
 
-
 .card-body {
-    padding: .2rem;
+    padding: .3rem;
 }
 
 .card:hover {
   transform: scale(1.1);
   box-shadow: 0 10px 16px 0 rgb(67, 67, 204);
 }
-p {
+card.text {
   text-align: center;
   font-weight: 400;
   font-size: 5px;
   text-shadow: 1px 1px rgb(227, 171, 15);
 }
+
+.weather-forcast-temp {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  text-shadow: 1px 1px rgb(227, 171, 15); 
+}
+
+
 footer {
   font-weight: 450;
   font-size: 12px;
  text-align: center;
   
 }
-
