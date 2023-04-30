@@ -97,80 +97,125 @@
      
     </form>
 
-   <div class="weather-forcast">
-<div class="row">
-   <div class="col" Mon>
+ <div class="weather-forcast" id="forecast">
+  <div class="row">
+
+     <div class="col-2">
   <div class="card">
     <div class="card-body">
-       <div class="card-title-weather-forcast-date">Mon</div>
+      <div class="card-title-weather-forcast-date" id="Sun">Sun</div>
       <p class="card-text" style="font-size: 20px; line-height: 2em;"></p>
-         <img src="http://openweathermap.org/img/wn/02d.png "
-       alt=""
-       width ="60"
-       />
-      <div class="weather-forcast-temp">9℃</div>
+      <img
+        src=""
+        alt=""
+        width="60"
+        id="Sun-icon"
+      />
+      <div class="weather-forcast-temp" id="Sun-temp"></div>
     </div>
-  </div>
-</div> 
-
-     
-     <div class="col" Tues> 
-  <div class="card">
-    <div class="card-body">
-       <div class="card-title-weather-forcast-date">Tues</div>
-      <p class="card-text" style="font-size: 20px; line-height: 2em;"></p>
-         <img src="http://openweathermap.org/img/wn/02d.png "
-       alt=""
-       width ="60"
-       />
-         <div class="weather-forcast-temp">9℃</div>
-    </div>
-  </div>
-</div> 
-
-     <div class="col" Wed>
-  <div class="card">
-    <div class="card-body">
-      <div class="card-title-weather-forcast-date">Wed</div>
-      <p class="card-text" style="font-size: 20px; line-height: 2em;"></p>
-         <img src="http://openweathermap.org/img/wn/02d.png "
-       alt=""
-       width ="60"
-       />
-        <div class="weather-forcast-temp">9℃</div>
-      </div>
-  </div>
-</div> 
-
-     <div class="col" Thurs> 
-  <div class="card">
-    <div class="card-body">
-      <div class="card-title-weather-forcast-date">Thur</div>
-      <p class="card-text" style="font-size: 20px; line-height: 2em;"> </p>
-         <img src="http://openweathermap.org/img/wn/02d.png "
-       alt=""
-       width ="60"
-       />
-        <div class="weather-forcast-temp">9℃</div>
-     </div>
   </div>
 </div>
 
-     <div class="col" Fri>
+   <div class="col-2">
   <div class="card">
     <div class="card-body">
-       <div class="card-title-weather-forcast-date">Fri</div>
+      <div class="card-title-weather-forcast-date" id="Mon">Mon</div>
       <p class="card-text" style="font-size: 20px; line-height: 2em;"></p>
-         <img src="http://openweathermap.org/img/wn/02d.png "
-       alt=""
-       width ="60"
-       />
-      <div class="weather-forcast-temp">9℃</div>
+      <img
+        src=""
+        alt=""
+        width="60"
+        id="Mon-icon"
+      />
+      <div class="weather-forcast-temp" id="Mon-temp"></div>
     </div>
   </div>
-</div> 
+</div>
 
- <br>
+<div class="col-2">
+  <div class="card">
+    <div class="card-body">
+      <div class="card-title-weather-forcast-date" id="Tues">Tues</div>
+      <p class="card-text" style="font-size: 20px; line-height: 2em;"></p>
+      <img
+        src=""
+        alt=""
+        width="60"
+        id="Tues-icon"
+      />
+      <div class="weather-forcast-temp" id="Tues-temp"></div>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-2">
+  <div class="card">
+    <div class="card-body">
+      <div class="card-title-weather-forcast-date" id="Wed">Wed</div>
+      <p class="card-text" style="font-size: 20px; line-height: 2em;"></p>
+      <img
+        src=""
+        alt=""
+        width="60"
+        id="Wed-icon"
+      />
+      <div class="weather-forcast-temp" id="Wed-temp"></div>
+    </div>
+  </div>
+</div>
+
+
+     <div class="col-2">
+  <div class="card">
+    <div class="card-body">
+      <div class="card-title-weather-forcast-date" id="Thur">Thur</div>
+      <p class="card-text" style="font-size: 20px; line-height: 2em;"></p>
+      <img
+        src=""
+        alt=""
+        width="60"
+        id="Thur-icon"
+      />
+      <div class="weather-forcast-temp" id="Thur-temp"></div>
+    </div>
+  </div>
+</div>
+
+   <div class="col-2">
+  <div class="card">
+    <div class="card-body">
+      <div class="card-title-weather-forcast-date" id="Fri">Fri</div>
+      <p class="card-text" style="font-size: 20px; line-height: 2em;"></p>
+      <img
+        src=""
+        alt=""
+        width="60"
+        id="Fri-icon"
+      />
+      <div class="weather-forcast-temp" id="Fri-temp"></div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="col-2">
+  <div class="card">
+    <div class="card-body">
+      <div class="card-title-weather-forcast-date" id="Sat">Sat</div>
+      <p class="card-text" style="font-size: 20px; line-height: 2em;"></p>
+      <img
+        src=""
+        alt=""
+        width="60"
+        id="Sat-icon"
+      />
+      <div class="weather-forcast-temp" id="Sat-temp"></div>
+    </div>
+  </div>
+</div>
+
+<br>
     <footer>
       <a href="https://github.com/HurricaneGypsy/Weather-App" target="_blank">Open Source on Github</a>
   Coded by <a href="https://www.linkedin.com/in/pardip-kaur-582944219/" target="_blank">Pardip Kaur</a> and hosted on <a href="https://www.netlify.com/" target="_blank">Netlify</a>

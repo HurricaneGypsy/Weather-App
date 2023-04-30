@@ -89,17 +89,18 @@ background-color:  orange;
   flex-wrap: wrap;
 }
 
-.col{
+.col-2{
   text-align: center;
   font-weight: 400;
-  margin: 2px 2px;
-  border: 4px rgb(227, 171, 15);
+  margin: 10px 5px;
+  border: 5px rgb(227, 171, 15);
   border-style: double;
   border-radius: 10%;
   color: navy;
   width: calc(14% - (20px * (7 -1)) /7);
-  padding: 7px;
- 
+  padding: 5px;
+   margin-left: auto;
+  margin-right: auto;
 }
 
 
