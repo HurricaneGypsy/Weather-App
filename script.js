@@ -17,6 +17,16 @@ const formattedDateTime = dateTimeFormat.format(date);
 datetime.innerHTML = formattedDateTime;
 
 
+function search(event) {
+  event.preventDefault();
+  let apiKey = "59a70ea155f6bd700d4dc06ce96174c8";
+  let city = document.querySelector("#city-input").value;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayWeatherCondition);
+}
+
+
+
 function searchLocation(position) {
   let lat = position.coords.latitude;
   let lon = position.coords.longitude;
@@ -86,13 +96,7 @@ function convertToCelsius(fahrenheit) {
 }
 
 
-function search(event) {
-  event.preventDefault();
-  let apiKey = "59a70ea155f6bd700d4dc06ce96174c8";
-  let city = document.querySelector("#city-input").value;
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayForecast);
-}
+
 
 function displayForecast(response) {
   let forecast = response.data.daily;
