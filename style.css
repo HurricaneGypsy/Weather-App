@@ -90,12 +90,20 @@ background-color:  orange;
 }
 
 .col-2{
+   background: radial-gradient(
+    circle at 50% 50%,
+    rgb(212, 212, 211) 15%,
+    rgb(212, 228, 229) 25.9%,
+    rgb(122, 223, 232) 40.7%,
+    rgb(240, 230, 155) 95.2%
+  );
   text-align: center;
   font-weight: 400;
   margin: 10px 5px;
   border: 4px rgb(227, 171, 15);
   border-style: double;
   border-radius: 10%;
+  cursor: pointer;
   color: navy;
   width: calc(14% - (8px * (7 -1)) /7);
   padding: 2px;
@@ -104,55 +112,33 @@ background-color:  orange;
   
 }
 
-
-#Sun, #Mon, #Tue, #Wed, #Thu, #Fri, #Sat, #Sun {
-  text-align: center;
-  text-decoration: underline;
-  font-size: 15px;
-  font-weight: 500;
-  color: navy;
-  padding: 5%;
-  text-shadow: 1px 1px rgb(227, 171, 15);
-  
-}
-
-.card {
-  background: radial-gradient(
-    circle at 50% 50%,
-    rgb(233, 233, 229) 0%,
-    rgb(212, 228, 229) 20.9%,
-    rgb(122, 223, 232) 40.7%,
-    rgb(240, 230, 155) 95.2%
-  );
-  border-radius: 10%;
-  transition: all 200ms ease-in-out;
-  cursor: pointer;
-  height: 100%;
- 
-}
-
-.card-body {
-    padding: .3rem;
-}
-
-.card:hover {
-  transform: scale(1.1);
+.col-2:hover {
+  transform: scale(1.2);
+  transition: 150ms; 
   box-shadow: 0 10px 16px 0 rgb(67, 67, 204);
 }
-card.text {
-  text-align: center;
-  font-weight: 400;
-  font-size: 5px;
-  text-shadow: 1px 1px rgb(227, 171, 15);
+
+img {
+  box-shadow: 0 8px 12px 0 rgb(67, 67, 204); 
 }
 
-.weather-forecast-temp {
+img:hover {
+  transform: scale(2.0);
+  transition: 150ms; 
+}
+.weather-forecast-date {
   text-align: center;
-  font-weight: 400;
+  text-decoration: underline;
+  font-weight: 500;
   font-size: 20px;
   text-shadow: 1px 1px rgb(227, 171, 15); 
 }
-
+.weather-forecast-temperatures {
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  text-shadow: 1px 1px rgb(227, 171, 15);  
+}
 
 footer {
   font-weight: 450;
@@ -160,3 +146,4 @@ footer {
  text-align: center;
   
 }
+
