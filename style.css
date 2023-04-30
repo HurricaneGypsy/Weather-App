@@ -83,31 +83,32 @@ li {
 background-color:  orange;
   }
 
-.row {
-  margin:0 10px;
+  .row{
   display: flex;
   flex-wrap: wrap;
+  margin: 0 -5px;
 }
 
 .col-2{
   text-align: center;
   font-weight: 400;
   margin: 10px 5px;
-  border: 5px rgb(227, 171, 15);
+  border: 4px rgb(227, 171, 15);
   border-style: double;
   border-radius: 10%;
   color: navy;
-  width: calc(14% - (20px * (7 -1)) /7);
-  padding: 5px;
+  width: calc(14% - (8px * (7 -1)) /7);
+  padding: 2px;
    margin-left: auto;
   margin-right: auto;
+  
 }
 
 
-.card-title-weather-forcast-date {
+#Sun, #Mon, #Tue, #Wed, #Thu, #Fri, #Sat, #Sun {
   text-align: center;
   text-decoration: underline;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 500;
   color: navy;
   padding: 5%;
