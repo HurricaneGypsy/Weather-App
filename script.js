@@ -96,8 +96,6 @@ function convertToCelsius(fahrenheit) {
 }
 
 
-
-
 function displayForecast(response) {
   let forecast = response.data.daily;
 
@@ -107,21 +105,22 @@ function displayForecast(response) {
       let dayOfWeek = date.toLocaleDateString("en-US", { weekday: "short" });
       let temperature = Math.round(day.temp.day);
       let icon = day.weather[0].icon;
-
       document.querySelector(`#${dayOfWeek}`).innerHTML = `${temperature}℃`;
       document
         .querySelector(`#${dayOfWeek}-icon`)
         .setAttribute("src", `http://openweathermap.org/img/wn/${icon}.png`);
+      getForecast({lat: day.weather[0].lat, lon: day.weather[0].lon});
     }
   });
 }
+
+function getForecast(coordinates) {
+  let apiKey = "59a70ea155f6bd700d4dc06ce96174c8";
+  let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&unit=metric`;
+  axios.get(apiUrl).then(displayWeatherCondition);
+}
+
 let daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 let now = new Date();
 let dayOfWeek = daysOfWeek[now.getDay()];
 now.setDate(now.getDate() + 7);
-
-
-
-
-
- 
