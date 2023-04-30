@@ -86,7 +86,6 @@ function convertToCelsius(fahrenheit) {
 }
 
 
-
 function search(event) {
   event.preventDefault();
   let apiKey = "59a70ea155f6bd700d4dc06ce96174c8";
@@ -98,14 +97,13 @@ function search(event) {
 function displayForecast(response) {
   let forecast = response.data.daily;
 
- 
-forecast.forEach(function (day, index) {
+  forecast.forEach(function (day, index) {
     if (index < 7) {
       let date = new Date(day.dt * 1000);
       let dayOfWeek = date.toLocaleDateString("en-US", { weekday: "short" });
       let temperature = Math.round(day.temp.day);
       let icon = day.weather[0].icon;
-  
+
       document.querySelector(`#${dayOfWeek}`).innerHTML = `${temperature}℃`;
       document
         .querySelector(`#${dayOfWeek}-icon`)
