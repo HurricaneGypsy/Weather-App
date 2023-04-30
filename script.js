@@ -17,7 +17,6 @@ const formattedDateTime = dateTimeFormat.format(date);
 datetime.innerHTML = formattedDateTime;
 
 
-
 function searchLocation(position) {
   let lat = position.coords.latitude;
   let lon = position.coords.longitude;
@@ -85,6 +84,8 @@ function convertToFahrenheit(celsius) {
 function convertToCelsius(fahrenheit) {
   return ((fahrenheit - 32) * 5) / 9;
 }
+
+
 
 function search(event) {
   event.preventDefault();
