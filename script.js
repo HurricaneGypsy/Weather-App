@@ -37,10 +37,7 @@ searchForm.addEventListener("submit", search);
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
-
-
-
-  function displayWeatherCondition(response) {
+function displayWeatherCondition(response) {
     document.querySelector("#city").innerHTML = response.data.name;
     document.querySelector("#current-temp").innerHTML = Math.round(
       response.data.main.temp
@@ -94,7 +91,7 @@ function search(event) {
   let apiKey = "59a70ea155f6bd700d4dc06ce96174c8";
   let city = document.querySelector("#city-input").value;
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayForcast);
+  axios.get(apiUrl).then(displayForecast);
 }
 
 function displayForecast(response) {
@@ -115,9 +112,11 @@ forecast.forEach(function (day, index) {
     }
   });
 }
-  let daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-  let now = new Date();
-  let dayOfWeek = daysOfWeek[now.getDay()];
+let daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+let now = new Date();
+let dayOfWeek = daysOfWeek[now.getDay()];
+now.setDate(now.getDate() + 7);
+
 
 
 
