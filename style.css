@@ -1,10 +1,11 @@
 body {
   background: radial-gradient(
     circle at 50% 50%,
-   
-    rgb(177, 231, 236) 10.8%,
-    rgb(215, 198, 71) 95.2%
+    rgb(154, 224, 236) 10.8%,
+    rgb(233, 219, 110) 95.2%  
   );
+
+
    margin: 0 auto;
    margin-top: 2%;
   padding: 10px;
@@ -12,6 +13,7 @@ body {
   border-radius: 2%;
   max-width: 950px;
 }
+
 
 #datetime {
 text-align: center;
@@ -92,7 +94,7 @@ background-color:  orange;
 .col-2{
    background: radial-gradient(
     circle at 50% 50%,
-    rgb(212, 212, 211) 15%,
+    rgb(154, 224, 236) 10.8%,
     rgb(212, 228, 229) 25.9%,
     rgb(122, 223, 232) 40.7%,
     rgb(240, 230, 155) 95.2%
@@ -115,16 +117,18 @@ background-color:  orange;
 .col-2:hover {
   transform: scale(1.2);
   transition: 150ms; 
-  box-shadow: 0 10px 16px 0 rgb(67, 67, 204);
+  box-shadow: 0 6px 12px 0 rgb(67, 67, 204);
 }
 
 img {
-  box-shadow: 0 8px 12px 0 rgb(67, 67, 204); 
-}
+ 
+   border-radius: 50%; 
+   box-shadow:1px 2px 2px 2px rgb(227, 171, 15); 
+} 
 
 img:hover {
   transform: scale(2.0);
-  transition: 150ms; 
+  transition: 150ms;
 }
 .weather-forecast-date {
   text-align: center;
