@@ -55,13 +55,10 @@ h3 {
   font-style: italic;
   
 }
-#celsius-link {
+#celsius-link, #fahrenheit-link  {
   color: navy;
   
 }
-#fahrenheit-link {
-color: navy;
-}  
 
 img {
   max-width: 100%;
